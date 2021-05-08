@@ -219,6 +219,70 @@ print("How about you?")
 
 
 # 列表--切片
+>>> fruits=["cherry", "lemon", "banana", "grape", "apple", "mongo"] 
+>>> print(fruits[0:3]) 
+['cherry', 'lemon', 'banana']
+>>> print(fruits[1:4]) 
+['lemon', 'banana', 'grape']
+>>> print(fruits[:4])  
+['cherry', 'lemon', 'banana', 'grape']
+>>> print(fruits[4:]) 
+['apple', 'mongo']
+>>> print(fruits[-4:]) 
+['banana', 'grape', 'apple', 'mongo']
+
+# 遍历切片
+>>> for fruit in fruits[:2]:
+...     print(fruit.title())
+... 
+Cherry
+Lemon
+
+# 复制列表
+>>> print(fruits[:]) 
+['cherry', 'lemon', 'banana', 'grape', 'apple', 'mongo']
+
+>>> my_fruits=["cherry", "lemon", "banana", "grape", "apple", "mongo"] 
+>>> friend_fruits=my_fruits[:] 
+>>> friend_fruits
+['cherry', 'lemon', 'banana', 'grape', 'apple', 'mongo']
+>>> friend_fruits.append("orange") 
+>>> friend_fruits
+['cherry', 'lemon', 'banana', 'grape', 'apple', 'mongo', 'orange']
+>>> my_fruits
+['cherry', 'lemon', 'banana', 'grape', 'apple', 'mongo']
+>>> my_fruits.append("strawberry") 
+>>> my_fruits
+['cherry', 'lemon', 'banana', 'grape', 'apple', 'mongo', 'strawberry']
+
+
+# 元组
+# 列表是可以修改的，将不能修改的值称为不可变的 ，而不可变的列表被称为元组 。
+>>> tuple=(100,50) 
+>>> print(tuple[0]) 
+100
+>>> print(tuple[1]) 
+50
+# 修改元组元素（不可修改）
+>>> tuple[0]=200
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> print(tuple)    
+(100, 50)
+
+# 修改元组变量(重新赋值)
+>>> tuple_1=(3,6) 
+>>> print(tuple_1) 
+(3, 6)
+>>> tuple_1=(5,8)  
+>>> print(tuple_1)
+(5, 8)
+
+
+
+
+
 
 
 
