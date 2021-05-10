@@ -188,3 +188,51 @@ Username: mcurie
         Location: Paris
 
        
+# 练习
+people = [ {'color': 'green', 'points': 5}, {'color': 'yellow', 'points': 10}, {'color': 'red', 'points': 15}]
+>>> for value in people:
+...     print(value)
+... 
+{'color': 'green', 'points': 5}
+{'color': 'yellow', 'points': 10}
+{'color': 'red', 'points': 15}
+
+people = { "Amily": ["北京", "上海", "广州"], "Bay" : ["西安", "武汉", "成都"], "Cindy" : ["杭州", "南京", "重庆"] }
+>>> for person, cities in people.items(): 
+...     for city in cities:
+...             print(person + " : " + city)
+... 
+Amily : 北京
+Amily : 上海
+Amily : 广州
+Bay : 西安
+Bay : 武汉
+Bay : 成都
+Cindy : 杭州
+Cindy : 南京
+Cindy : 重庆
+
+ cities = { "beijing" : {"country": "China", "population": "16B", "fact": "Forbiden City"}, 
+ "NewYork" : {"country": "America", "population": "5B", "fact": "Statue of liberty"}, 
+ "Paris" : {"country": "France", "population": "1B", "fact": "Notre-Dame of Paris"} }
+ >>> for city, info in cities.items():
+...     print("\nCity: " + city)      
+...     print("\tCountry: " + info["country"])
+...     print("\tPopulation: " + info["population"])
+...     print("\tFact: " + info["fact"])
+... 
+
+City: beijing
+        Country: China
+        Population: 16B
+        Fact: Forbiden City
+
+City: NewYork
+        Country: America
+        Population: 5B
+        Fact: Statue of liberty
+
+City: Paris
+        Country: France
+        Population: 1B
+        Fact: Notre-Dame of Paris
