@@ -183,3 +183,18 @@ def car_info(brand, type, **message):
 
 info = car_info("BMW", "SUV", color="blank", location="China")
 print(info)
+
+# 函数导入方式
+# 导入整个模块
+import module_name
+# 导入特定的函数
+import module_name.function_name()
+from module_name import function_name
+# 从模块中导入任意数量的函数
+from module_name import function_0, function_1, function_2
+# 使用as 给函数指定别名
+from module_name import function_name as fn
+# 给模块指定别名
+import module_name as mn
+# 导入模块中的所有函数
+from module_name import *
