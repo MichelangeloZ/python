@@ -1,4 +1,4 @@
-_*_coding:utf-8 _*_
+# _*_coding:utf-8 _*_
 def greet(name):
     print("Hello! " + name)
 greet("Jessica")
@@ -6,7 +6,7 @@ greet("Jessica")
 def display_message():
     print("I have learnt function")
 display_message()
-
+  
 def favorite_book(title):
     print("One of my favorite books is " + title)
 favorite_book("Alice in Wonderland")
