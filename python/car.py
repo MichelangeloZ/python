@@ -71,6 +71,7 @@ class Restaurant():
 reataurant = Restaurant("Enjoy Life", "freestyle")
 reataurant.describe_restaurant()
 reataurant.open_restaurant()
+
 reataurant.set_number_served(5)
 reataurant.increment_number_served(25)
 reataurant.people_served()
@@ -100,6 +101,7 @@ class User():
 user = User("jay", "chou")
 user.describe_user()
 user.greet_user()
+
 user.increment_login_attempts(1)
 user.reset_login_attempts(0)
 user.get_users()
