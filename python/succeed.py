@@ -35,7 +35,7 @@ class Battery():
 
     def upgrade_battery(self):
         if self.battery_size != 85:
-            self.battery_size == 85
+            self.battery_size = 85
 
     def describe_battery(self):
         """打印一条描述电瓶容量的消息"""
@@ -91,6 +91,14 @@ my_tesla.battery.get_range()
 # 重写父类方法
 my_tesla.fill_gas_tank()
 
+# 运行结果
+audi has 5 miles on it.
+audi need fill 92 oil.
+2016 Tesla Models S
+This car has a 85-kWh battery.
+This car can go approximately 270 miles on a full charge.
+Electric car doesn't need a gas tank!
+
 
 
 ## 练习
@@ -125,6 +133,13 @@ icecream.describe_restaurant()
 icecream.open_restaurant()
 icecream.get_flavors()
 
+# 运行结果
+This restaurant's name is Summer
+This restaurant's cuisine_type is cool
+This restaurant is not opening in winter!
+There are 4 kinds of flavors: 
+['straberry', 'chocolate', 'mongo', 'grape']
+
 
 class User():
     def __init__(self, first_name, last_name):
@@ -150,4 +165,27 @@ class Admin(User):
 admin = Admin("jay", "chou")
 admin.describe_user()
 admin.privilege.show_privileges()
+
+# 运行结果
+My first_name is Jay, my last_name is Chou
+Admin has these privileges: 
+['can add post', 'can delete post', 'can ban user']
+
+
+
+## 导入类的方式
+1， 导入单个类
+from car import Car （from 文件名 import 类名）
+2，在一个模块中存储多个类
+from car import ElectricCar
+3，从一个模块中导入多个类
+from car import Car, ElectricCar
+4，导入整个模块
+import car （导入整个模块，再使用句点表示法访问需要的类）
+my_tesla = car.ElectricCar('tesla', 'roadster', 2016)
+5，在一个模块中导入另一个模块
+from car import Car
+from electric_car import ElectricCar
+
+
 
